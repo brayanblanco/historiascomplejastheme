@@ -22,14 +22,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				historiascomplejastheme_posted_on();
-				historiascomplejastheme_posted_by();
+				historiascomplejas_posted_on();
+				historiascomplejas_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php historiascomplejastheme_post_thumbnail(); ?>
+	<?php historiascomplejas_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -37,7 +37,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'historiascomplejastheme' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'historiascomplejas' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -50,7 +50,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'historiascomplejastheme' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'historiascomplejas' ),
 				'after'  => '</div>',
 			)
 		);
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php historiascomplejastheme_entry_footer(); ?>
+		<?php historiascomplejas_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

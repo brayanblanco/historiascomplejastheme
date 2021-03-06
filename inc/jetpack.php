@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function historiascomplejastheme_jetpack_setup() {
+function historiascomplejas_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'historiascomplejastheme_infinite_scroll_render',
+			'render'    => 'historiascomplejas_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function historiascomplejastheme_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'historiascomplejastheme-style',
+				'stylesheet' => 'historiascomplejas-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,12 +48,12 @@ function historiascomplejastheme_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'historiascomplejastheme_jetpack_setup' );
+add_action( 'after_setup_theme', 'historiascomplejas_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function historiascomplejastheme_infinite_scroll_render() {
+function historiascomplejas_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :
