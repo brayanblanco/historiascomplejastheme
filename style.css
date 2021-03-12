@@ -380,13 +380,14 @@ address {
   margin: 0 0 1.5em; }
 
 pre {
-  background: #eee;
+  background: #bbb;
   font-family: "Courier 10 Pitch", courier, monospace;
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 1.6em; }
+  padding: 1.6em;
+  color: #000; }
 
 code,
 kbd,
