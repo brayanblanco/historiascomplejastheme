@@ -476,18 +476,27 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
-  line-height: 1;
-  padding: 0.6em 1em 0.4em; }
+  border: 1px solid #D7007A;
+  color: #fff;
+  background: transparent;
+  padding: 15px 100px;
+  margin: 10px 4px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: inset 0 0 0 0 #D7007A;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa; }
+    border-color: #D7007A;
+    background: #D7007A;
+    box-shadow: inset 0 0 0 50px #D7007A; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -495,7 +504,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb; }
+    border-color: #00D700; }
 
 input[type="text"],
 input[type="email"],
@@ -517,6 +526,7 @@ textarea {
   border: 1px solid #101010;
   border-radius: 3px;
   padding: 5px 10px 5px;
+  background-color: #303030;
   outline: none; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -540,8 +550,7 @@ select {
   border: 1px solid #101010; }
 
 textarea {
-  width: 100%;
-  background-color: #303030; }
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Layouts

@@ -43,8 +43,9 @@ $color__background-ins: #fff9c0;
 $color__text-screen: #FF0000;
 
 
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
+$color__button: transparent;
+$color__button-hover: $color-primary-0;
+$color__border-button: $color-primary-0;
+$color__border-button-focus: $color-secondary-1-0;
 
 $color__border-abbr: #666;
