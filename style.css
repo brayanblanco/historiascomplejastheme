@@ -550,7 +550,8 @@ select {
   border: 1px solid #101010; }
 
 textarea {
-  width: 100%; }
+  width: 100%;
+  resize: none; }
 
 /*--------------------------------------------------------------
 # Layouts
