@@ -48,6 +48,27 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+/*$color-primary-0: #D7007A;	// Main Primary color
+$color-primary-1: #EA5EAD;
+$color-primary-2: #E02790;
+$color-primary-3: #9B0057;
+$color-primary-4: #610037;*/
+/*$color-primary-0: #FF2A03;	// Main Primary color
+$color-primary-1: #FF8B76;
+$color-primary-2: #FF5E40;
+$color-primary-3: #B91D00;
+$color-primary-4: #721200;*/
+/*
+$color-primary-0: #A0EF03;	// Main Primary color
+$color-primary-1: #CBF772;
+$color-primary-2: #B6F23D;
+$color-primary-3: #73AD00;
+$color-primary-4: #476B00;*/
+/*$color-primary-0: #E50082;	// Main Primary color
+$color-primary-1: #F168B5;
+$color-primary-2: #EA2D98;
+$color-primary-3: #B20065;
+$color-primary-4: #750042;*/
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -460,11 +481,11 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #D7007A; }
+  color: #DC143B; }
   a:visited {
-    color: #D7007A; }
+    color: #DC143B; }
   a:hover, a:focus, a:active {
-    color: #EA5EAD; }
+    color: #F57A92; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -476,7 +497,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid #D7007A;
+  border: 1px solid #DC143B;
   color: #fff;
   background: transparent;
   padding: 15px 100px;
@@ -486,7 +507,7 @@ input[type="submit"] {
   position: relative;
   text-decoration: none;
   display: inline-block;
-  box-shadow: inset 0 0 0 0 #D7007A;
+  box-shadow: inset 0 0 0 0 #DC143B;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
@@ -495,17 +516,9 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #D7007A;
-    background: #D7007A;
-    box-shadow: inset 0 0 0 50px #D7007A; }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #00D700; }
+    border-color: #DC143B;
+    background: #DC143B;
+    box-shadow: inset 0 0 0 50px #DC143B; }
 
 input[type="text"],
 input[type="email"],
@@ -564,14 +577,11 @@ textarea {
 
 .site-header {
   grid-area: header;
-  background-color: #D7007A;
-  border-width: 0 0 2px;
-  border-style: solid;
-  border-color: #9B0057;
+  background-color: #DC143B;
   position: fixed;
   width: 100%;
   height: 150px;
-  box-shadow: 0px 0px 10px #EA5EAD; }
+  box-shadow: 0px 0px 10px #F57A92; }
 
 .site-main {
   padding-top: 150px;

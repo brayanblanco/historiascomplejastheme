@@ -10,9 +10,6 @@
 .site-header {
 	grid-area: header;
 	background-color: $color-primary-0;
-	border-width: 0 0 2px;
-	border-style: solid;
-	border-color: $color-primary-3;
   position: fixed;
 	width: 100%;
 	height: $size__site-header;
