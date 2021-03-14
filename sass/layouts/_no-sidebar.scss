@@ -10,9 +10,17 @@
 .site-header {
 	grid-area: header;
 	background-color: $color-primary-0;
+	border-width: 0 0 2px;
+	border-style: solid;
+	border-color: $color-primary-3;
+  position: fixed;
+	width: 100%;
+	height: $size__site-header;
+	box-shadow: 0px 0px 10px $color-primary-1;
 }
 
 .site-main {
+	padding-top: $size__site-header;
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
