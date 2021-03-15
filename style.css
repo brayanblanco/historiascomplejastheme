@@ -48,27 +48,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
-/*$color-primary-0: #D7007A;	// Main Primary color
-$color-primary-1: #EA5EAD;
-$color-primary-2: #E02790;
-$color-primary-3: #9B0057;
-$color-primary-4: #610037;*/
-/*$color-primary-0: #FF2A03;	// Main Primary color
-$color-primary-1: #FF8B76;
-$color-primary-2: #FF5E40;
-$color-primary-3: #B91D00;
-$color-primary-4: #721200;*/
-/*
-$color-primary-0: #A0EF03;	// Main Primary color
-$color-primary-1: #CBF772;
-$color-primary-2: #B6F23D;
-$color-primary-3: #73AD00;
-$color-primary-4: #476B00;*/
-/*$color-primary-0: #E50082;	// Main Primary color
-$color-primary-1: #F168B5;
-$color-primary-2: #EA2D98;
-$color-primary-3: #B20065;
-$color-primary-4: #750042;*/
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -481,11 +460,13 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #DC143B; }
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold; }
   a:visited {
-    color: #DC143B; }
+    color: #fff; }
   a:hover, a:focus, a:active {
-    color: #F57A92; }
+    color: #DC143B; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {

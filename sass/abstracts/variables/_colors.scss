@@ -14,9 +14,9 @@ $color__text-input-focus: #fff; //texto en el input cuando el foco está en el m
 
 $color__border-input: #101010;
 
-$color__link: $color-primary-0;
-$color__link-visited: $color-primary-0;
-$color__link-hover: $color-primary-1;
+$color__link: $color__text-main;
+$color__link-visited: $color__text-main;
+$color__link-hover: $color-primary-0;
 
 // preformated text
 $color__background-pre: #bbb;
