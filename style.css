@@ -371,6 +371,12 @@ h6 {
   font-family: "Megrim", cursive;
   background-color: #DC143B; }
 
+.home-section-title {
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  z-index: 1; }
+
 p {
   margin-bottom: 1.5em; }
 
@@ -581,6 +587,17 @@ textarea {
   overflow: hidden;
   /* Resolves issue with <pre> elements forcing full width. */ }
 
+.site-home {
+  width: 100%;
+  padding: 150px 0 0;
+  grid-column-start: 1;
+  grid-column-end: 4; }
+  .site-home section {
+    width: 100%;
+    object-fit: cover;
+    height: 20em;
+    overflow: hidden; }
+
 .site-footer {
   grid-area: footer; }
 
@@ -722,6 +739,10 @@ textarea {
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
   display: inline-block; }
+
+.slideshow {
+  width: 100%;
+  transform: translate(0, -25%); }
 
 /* Captions
 --------------------------------------------- */
