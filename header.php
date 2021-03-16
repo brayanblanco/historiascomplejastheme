@@ -16,7 +16,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Megrim&family=Open+Sans&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -29,20 +30,16 @@
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
+			?>
+			<div class="site-identity">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$historiascomplejas_description = get_bloginfo( 'description', 'display' );
-			if ( $historiascomplejas_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $historiascomplejas_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+				$historiascomplejas_description = get_bloginfo( 'description', 'display' );
+				if ( $historiascomplejas_description || is_customize_preview() ) :
+					?>
+					<p class="site-description"><?php echo $historiascomplejas_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				<?php endif; ?>
+			</div>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
