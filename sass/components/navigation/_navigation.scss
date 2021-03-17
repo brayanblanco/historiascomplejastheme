@@ -1,12 +1,16 @@
 .main-navigation {
+	grid-area: navigation;
 	display: block;
 	width: 100%;
+	font-family: Megrim;
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		float: right;
+		background-color: $color__background-header;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -31,7 +35,7 @@
 			}
 
 			a {
-				width: 200px;
+				width: max-content;
 			}
 
 			:hover > a,
@@ -51,9 +55,11 @@
 
 	li {
 		position: relative;
+		padding: 0 0.3em 0;
 
 		&:hover > a,
 		&.focus > a {
+			color: $color-primary-4;
 		}
 	}
 

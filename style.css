@@ -571,7 +571,9 @@ textarea {
   height: 150px;
   box-shadow: 0px 0px 10px #F57A92;
   display: grid;
-  align-content: center; }
+  align-content: center;
+  grid-template-areas: "branding ." "branding navigation";
+  padding: 0 2em 0; }
 
 .site-main {
   padding-top: 150px;
@@ -583,8 +585,8 @@ textarea {
   grid-area: footer; }
 
 .site-branding {
+  grid-area: branding;
   width: fit-content;
-  margin-left: 50px;
   display: flex;
   align-self: center; }
   .site-branding a {
@@ -609,13 +611,17 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
+  grid-area: navigation;
   display: block;
-  width: 100%; }
+  width: 100%;
+  font-family: Megrim; }
   .main-navigation ul {
     display: none;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    float: right;
+    background-color: #DC143B; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -630,12 +636,15 @@ textarea {
         display: block;
         left: auto; }
       .main-navigation ul ul a {
-        width: 200px; }
+        width: max-content; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    position: relative; }
+    position: relative;
+    padding: 0 0.3em 0; }
+    .main-navigation li:hover > a, .main-navigation li.focus > a {
+      color: #590011; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
