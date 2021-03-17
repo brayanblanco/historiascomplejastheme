@@ -614,7 +614,8 @@ textarea {
   grid-area: navigation;
   display: block;
   width: 100%;
-  font-family: Megrim; }
+  font-family: Megrim;
+  font-size: 1.2rem; }
   .main-navigation ul {
     display: none;
     list-style: none;
