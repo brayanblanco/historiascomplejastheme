@@ -9,13 +9,17 @@
 
 .site-header {
 	grid-area: header;
-	background-color: $color-primary-0;
+	background-color: $color__background-header;
   position: fixed;
 	width: 100%;
 	height: $size__site-header;
-	box-shadow: 0px 0px 10px $color-primary-1;
+	box-shadow: 0px 0px 10px $color__shadow-header;
 	display: grid;
 	align-content: center;
+	grid-template-areas:
+		"branding ."
+		"branding navigation";
+	padding: 0 2em 0;
 }
 
 .site-main {
@@ -29,8 +33,8 @@
 }
 
 .site-branding {
+	grid-area: branding;
 	width: fit-content;
-	margin-left: 50px;
 	//margin-right: auto;
 	a {
 		color: $color__text-header;
