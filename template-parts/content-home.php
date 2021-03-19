@@ -8,6 +8,7 @@
  */
 
 ?>
+<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 <div class="slide fade">
 		<?php the_post_thumbnail(
 			'post-thumbnail',
@@ -18,3 +19,4 @@
 		); ?>
     <span>Caption</span>
 </div>
+</a>

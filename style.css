@@ -774,9 +774,8 @@ textarea {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: auto;
-  margin-top: -22px;
   padding: 5px 14px 5px;
   color: white;
   font-weight: bold;
@@ -785,7 +784,8 @@ textarea {
   border-radius: 50%;
   user-select: none;
   background-color: #DC143B;
-  border: 2px #590011 solid; }
+  border: 2px #590011 solid;
+  margin: 0.5em; }
   .prev:hover, .next:hover {
     color: #590011; }
 
@@ -810,9 +810,9 @@ textarea {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 3s;
   animation-name: fade;
-  animation-duration: 1.5s; }
+  animation-duration: 3s; }
 
 @-webkit-keyframes fade {
   from {

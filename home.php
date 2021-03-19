@@ -4,6 +4,7 @@
 <main id="primary" class="site-home">
 <?php
   if ( have_posts() ) :
+    wp_enqueue_script( "slideshow", get_template_directory_uri() .  "/js/slideshow.js");
 ?>
 <section id="aboutme"></section>
 <section id="slideshow">
@@ -34,27 +35,7 @@
         ?>
       </div>
   </div>
-  <script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
+  <script src="" type="text/javascript"></script>
 </section>
       <?php
 

@@ -13,9 +13,8 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: auto;
-  margin-top: -22px;
   padding: 5px 14px 5px;
   color: white;
   font-weight: bold;
@@ -25,6 +24,7 @@
   user-select: none;
   background-color: $color-primary-0;
   border: 2px $color-primary-4 solid;
+  margin: 0.5em;
 
   &:hover{
     color: $color-primary-4;
@@ -55,9 +55,9 @@
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 3s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes fade {
