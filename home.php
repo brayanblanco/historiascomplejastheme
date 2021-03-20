@@ -5,11 +5,12 @@
 <?php
   if ( have_posts() ) :
     wp_enqueue_script( "slideshow", get_template_directory_uri() .  "/js/slideshow.js");
+
 ?>
 <section id="aboutme"></section>
 <section id="slideshow">
   <div class="slideshow-container">
-    <h2 class="home-section-title">ÚLTIMAS ENTRADAS</h2>
+    <h2 class="home-section-title to-the-right">ÚLTIMAS ENTRADAS</h2>
   <?php
       $postscount = 0;
 
@@ -24,8 +25,8 @@
       }
       ?>
 
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <input name="slideshow-prev" type="button" class="prev button" onclick="plusSlides(-1)" value="&#10094;">
+      <input name="slideshow-next" type="button" class="next button" onclick="plusSlides(1)" value="&#10095;">
       <div class="slideshow-dots">
         <?php
           for($i = 0; $i < $postscount; $i++) {
@@ -35,7 +36,6 @@
         ?>
       </div>
   </div>
-  <script src="" type="text/javascript"></script>
 </section>
       <?php
 

@@ -17,6 +17,7 @@
 				'class' => "slideshow"
 			)
 		); ?>
-    <span>Caption</span>
+    <span class="caption"
+><?php the_title() ?></span>
 </div>
 </a>
